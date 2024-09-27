@@ -1,0 +1,193 @@
+/* Estilos generales del contenedor */
+.dashboard-container {
+  padding: 15px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
+  margin: auto;
+  text-align: center;
+  font-size: 0.9rem; /* Tamaño de fuente adaptable */
+  overflow-y: auto; /* Permitir scroll vertical */
+  height: 100vh; /* Ocupa todo el alto de la pantalla */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ocupa todo el alto de la pantalla */
+  overflow-x: hidden; /* Evitar scroll horizontal */
+  overflow-y: auto; /* Permitir scroll vertical */
+}
+
+.logo-header {
+  width: 120px; /* Tamaño adaptable */
+  margin-bottom: 20px;
+}
+
+.calendar-container {
+  background-color: #f2f2f7;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2rem; /* Tamaño adaptable */
+  margin-bottom: 10px;
+  color: #1c1c1e;
+}
+
+.ios-calendar {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el formulario */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f2f2f7;
+  font-size: 1rem;
+  color: #1c1c1e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.save-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+  background-color: #5b0cac;
+}
+
+/* Estilos para los detalles de la cita confirmada */
+.cita-confirmada {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f2f2f7;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cita-confirmada h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.cita-confirmada p {
+  font-size: 1rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* MEDIA QUERIES PARA HACER EL PROYECTO RESPONSIVO */
+
+/* Para pantallas medianas (tablets, pantallas menores a 768px) */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .logo-header {
+    width: 100px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .save-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .cita-confirmada h4 {
+    font-size: 1rem;
+  }
+
+  .cita-confirmada p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Para pantallas pequeñas (teléfonos móviles menores a 480px) */
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .logo-header {
+    width: 80px;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .save-btn {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .cita-confirmada h4 {
+    font-size: 0.9rem;
+  }
+
+  .cita-confirmada p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Para pantallas pequeñas con una resolución de 544x254 */
+@media (max-width: 544px) and (max-height: 254px) {
+  .dashboard-container {
+    padding: 5px;
+    font-size: 0.75rem;
+  }
+
+  .logo-header {
+    width: 60px;
+  }
+
+  h3 {
+    font-size: 0.85rem;
+  }
+
+  .input-field {
+    padding: 6px;
+    font-size: 0.75rem;
+  }
+
+  .save-btn {
+    font-size: 0.75rem;
+    padding: 6px;
+  }
+
+  .cita-confirmada h4 {
+    font-size: 0.85rem;
+  }
+
+  .cita-confirmada p {
+    font-size: 0.75rem;
+  }
+}
+
+
